@@ -77,3 +77,8 @@ a {
       background: linear-gradient(45deg, #3afd3a, #9cec9c, #90EE90);
       color: white;
   }  
+
+
+.table-bordered td, .table-bordered th {
+    padding: 7px;
+}
