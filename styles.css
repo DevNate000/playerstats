@@ -2,7 +2,7 @@ img{
     width:500px;
 }
 body {
-    background-color: lightblue;
+  background-image: linear-gradient(90deg, #658cf7, #4f7bf3, #1151ff);
 }
 
 .name-stats{
