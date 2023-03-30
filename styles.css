@@ -79,6 +79,9 @@ a {
   }  
 
 
-.table-bordered td, .table-bordered th {
-    padding: 7px;
+.table-bordered td {
+    padding: 6px;
+}
+.table-bordered th {
+    padding: 1px;
 }
