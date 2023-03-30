@@ -9,6 +9,7 @@ fetch(`data.json`).then((data)=>{
         <td>${values.displayName}</td>
         <td>${values.username}</td>
         <td>${values.racesPlayed}</td>
+        <td>${values.avgSpeed}</td>
         <td>${values.level}</td>
         <td><img src="${values.image}"/></td>
         </tr>`;
