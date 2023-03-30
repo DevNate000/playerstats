@@ -17,6 +17,7 @@ body {
     width: max-content; /* fit will keep it on the page at all times*/
     position: relative;
     left: 70px;
+    color: yellow; /*here*/
   }
   
   .topnav a {
