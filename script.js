@@ -8,7 +8,9 @@ fetch(`https://scraper.nt-verse.com/api/racer/nathaniel818`).then((data)=>{
         <td>${objectData.racesPlayed}</td>
         <td>${objectData.avgSpeed}</td>
         <td>${objectData.level}</td>
-        <td><img src="${objectData.image}"/></td>
+        <td>${objectData.level}</td>
+        <td>${objectData.level}</td>
+        <td>${objectData.level}</td>
         </tr>`;
     document.getElementById("table_body").innerHTML=tableData;
 })  .catch((err)=>{
