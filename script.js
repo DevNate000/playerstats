@@ -1,4 +1,4 @@
-fetch("https://fakestoreapi.com/products").then((data)=>{
+fetch(`data.json`).then((data)=>{
     // console.log(data);
     return data.json();
 }).then((objectData)=>{
