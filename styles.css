@@ -38,20 +38,8 @@ body {
     background-image: linear-gradient(to bottom, #0092be , #00c3ff);
     color: white;
   }
-  .topnav a.activew {
-    background-image: linear-gradient(to bottom, #ce4500 , #ff5500);
-    color: white;
-  }
   .topnav a.activem {
     background-image: linear-gradient(to bottom, #faaa00 , #faaa00);
-    color: white;
-  }
-  .topnav a.actives {
-    background-image: linear-gradient(to bottom, #6d04aa , #a200ff);
-    color: white;
-  }
-  .topnav a.activec {
-    background-image: linear-gradient(to bottom, #1daa04 , #26ff00);
     color: white;
   }
 
