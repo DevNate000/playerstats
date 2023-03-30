@@ -1,9 +1,8 @@
-fetch(`data.json`).then((data)=>{
+fetch(`https://scraper.nt-verse.com/api/racer/nathaniel818)`).then((data)=>{
     // console.log(data);
         return data.json();
 }).then((objectData)=>{
-    console.log(objectData[0].username);
-    let tableData="";
+    let tableData=`<tr>
     objectData.map((values)=>{
         tableData+=`<tr>
         <td>${values.displayName}</td>
