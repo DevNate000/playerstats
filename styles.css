@@ -2,7 +2,7 @@ img{
     width:100px;
 }
 body {
-    background-color: tan;
+    background-color: pink;
 }
 
 
@@ -16,7 +16,6 @@ body {
     text-align: center;
     width: max-content; /* fit will keep it on the page at all times*/
     position: relative;
-    left: 455px;
     color: yellow; /*here*/
   }
   
