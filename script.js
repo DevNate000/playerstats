@@ -6,9 +6,10 @@ fetch(`data.json`).then((data)=>{
     let tableData="";
     objectData.map((values)=>{
         tableData+=`<tr>
+        <td>${values.displayName}</td>
         <td>${values.username}</td>
-        <td>${values.username}</td>
-        <td>${values.membership}</td>
+        <td>${values.racesPlayed}</td>
+        <td>${values.level}</td>
         <td><img src="${values.image}"/></td>
         </tr>`;
     });
