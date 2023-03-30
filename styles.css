@@ -54,10 +54,9 @@ body {
     color: white;
   }
   .topnav a.activem {
-    background-image: linear-gradient(to bottom, #faaa00 , #faaa00);
+    background-image: linear-gradient(45deg, #2F1C53, #A46DFF, #F6D1FD);
     color: white;
   }
-
 
 
 
