@@ -18,9 +18,3 @@ fetch(`data.json`).then((data)=>{
 })  .catch((err)=>{
     console.log(err);
 })
-
-
-
-// https://fakestoreapi.com/products
-
-// https://scraper.nt-verse.com/api/bootstrap
