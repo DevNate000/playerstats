@@ -7,6 +7,9 @@ img{
 body {
   background-image: linear-gradient(90deg, #658cf7, #4f7bf3, #1151ff);
 }
+a {
+  color: black;
+}
 
 .name-stats{
   font-size: 40px;
@@ -69,15 +72,4 @@ body {
   .topnav a.activem {
     background-image: linear-gradient(45deg, #2F1C53, #4711ac, #A46DFF);
     color: white;
-  }
-
-
-
-
-            
-a {
-color: rgb(0, 251, 255);
-margin: 35px;
-font-size: 75px;
-padding: 50px;
-}
+  }  
