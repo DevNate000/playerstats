@@ -1,14 +1,14 @@
 fetch(`data.json`).then((data)=>{
     // console.log(data);
-    return data.json();
+        return data.json();
 }).then((objectData)=>{
-    console.log(objectData[0].title);
+    console.log(objectData[0].username);
     let tableData="";
     objectData.map((values)=>{
         tableData+=`<tr>
-        <td>${values.title}</td>
-        <td>${values.description}</td>
-        <td>${values.price}</td>
+        <td>${values.username}</td>
+        <td>${values.username}</td>
+        <td>${values.membership}</td>
         <td><img src="${values.image}"/></td>
         </tr>`;
     });
