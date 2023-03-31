@@ -3,6 +3,7 @@ body {
   background-image: linear-gradient(90deg, #658cf7, #4f7bf3, #1151ff);
 }
 
+
 img {
     width: 500px;
     display: block;
@@ -10,7 +11,7 @@ img {
     margin-right: auto;
 }
 .smallimg {
-  width: 250px;
+  width: 300px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -31,6 +32,9 @@ a {
 .views {
   font-weight: bold;
   color: lime;
+}
+.container {
+  max-width: 850px;
 }
 
 .name-stats{
