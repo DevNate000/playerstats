@@ -3,7 +3,6 @@ body {
   background-image: linear-gradient(90deg, #658cf7, #4f7bf3, #1151ff);
 }
 
-
 img {
     width: 500px;
     display: block;
@@ -12,6 +11,12 @@ img {
 }
 .smallimg {
   width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tinyimg {
+  width: 50px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -34,7 +39,7 @@ a {
   color: lime;
 }
 .container {
-  max-width: 850px;
+  max-width: 1050px;
 }
 
 .name-stats{

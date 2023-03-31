@@ -2,6 +2,7 @@ fetch(`https://scraper.nt-verse.com/api/racer/nathaniel818`).then((data)=>{
         return data.json();
 }).then((objectData)=>{
     let tableData=`<tr>
+    <td><img class="tinyimg" src="car_nate.png" alt="ytdriver"></td>                  
     <td>[<a href="https://www.nitrotype.com/team/" + ${objectData.tag}>${objectData.tag}</a>]</td>
     <td><a href="https://www.nitrotype.com/" + ${objectData.username}>${objectData.displayName}</a></td>
         <td class="races">${objectData.racesPlayed}</td>
@@ -21,6 +22,7 @@ fetch(`https://scraper.nt-verse.com/api/racer/toonidy`).then((data)=>{
         return data.json();
 }).then((objectData)=>{
     let tableData=`<tr>
+    <td><img class="tinyimg" src="car_toonidy.png" alt="ytdriver"></td>                  
     <td>[<a href="https://www.nitrotype.com/team/" + ${objectData.tag}>${objectData.tag}</a>]</td>
     <td><a href="https://www.nitrotype.com/" + ${objectData.username}>${objectData.displayName}</a></td>
         <td>${objectData.racesPlayed}</td>
@@ -40,6 +42,7 @@ fetch(`https://scraper.nt-verse.com/api/racer/travis`).then((data)=>{
         return data.json();
 }).then((objectData)=>{
     let tableData=`<tr>
+    <td><img class="tinyimg" src="car_travis.png" alt="ytdriver"></td>                  
     <td>[<a href="https://www.nitrotype.com/team/" + ${objectData.tag}>${objectData.tag}</a>]</td>
     <td><a href="https://www.nitrotype.com/" + ${objectData.username}>${objectData.displayName}</a></td>
         <td>${objectData.racesPlayed}</td>
