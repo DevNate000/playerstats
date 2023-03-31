@@ -1,14 +1,36 @@
-img{
-    width:500px;
+/* Main */
+body {
+  background-image: linear-gradient(90deg, #658cf7, #4f7bf3, #1151ff);
+}
+
+img {
+    width: 500px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-body {
-  background-image: linear-gradient(90deg, #658cf7, #4f7bf3, #1151ff);
+.smallimg {
+  width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 a {
   color: black;
+}
+
+
+
+/* Table */
+
+.races {
+  font-weight: bold;
+  color: yellow;
+}
+.views {
+  font-weight: bold;
+  color: lime;
 }
 
 .name-stats{
@@ -22,6 +44,15 @@ a {
   text-align: center;
 }
 
+.table-bordered td {
+  padding: 6px;
+}
+.table-bordered th {
+  padding: 1px;
+}
+
+
+
 /* Nav Bar */
 
 .topnav {
@@ -30,7 +61,7 @@ a {
     border: 2px solid white;
     text-align: center!important;
     position: relative;
-    max-width: 582px;
+    max-width: 658px;
     margin: auto;
   }
   
@@ -49,8 +80,7 @@ a {
     color: black;
   }
 
-  .navimg
-{
+  .navimg {
   align-items: center;
   color: rgb(212, 255, 0);
   font-size: 15px;
@@ -64,6 +94,7 @@ a {
 }
   
 
+
 /* ACTIVE COLORS */
   .topnav a.actived {
     background-image: linear-gradient(45deg, #1c2b53, #113dac, #6d9bff);
@@ -74,14 +105,10 @@ a {
     color: white;
   }  
   .topnav a.activee {
-      background: linear-gradient(45deg, #3afd3a, #9cec9c, #90EE90);
+      background: linear-gradient(45deg, #3ee83e, #15d215, #00cb00);
       color: white;
   }  
-
-
-.table-bordered td {
-    padding: 6px;
-}
-.table-bordered th {
-    padding: 1px;
-}
+  .topnav a.activea {
+    background: linear-gradient(45deg, #e8823e, #d96619, #c75102);
+    color: white;
+} 
