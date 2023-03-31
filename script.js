@@ -38,7 +38,7 @@ fetch(`https://scraper.nt-verse.com/api/racer/toonidy`).then((data)=>{
 }).then((objectData)=>{
     let tableData=`<tr>
     <td><img class="tinyimg" src="car_toonidy.png" alt="ytdriver"></td> 
-    <td>https://www.nitrotype.com/cars/painted/${objectData.carID}_large_1_10.png</td>
+    <td><img class="tinyimg" src="https://www.nitrotype.com/cars/painted/${objectData.carID}_large_1_10.png" alt="carimg"></td>
     <td>[<a href="https://www.nitrotype.com/team/${objectData.tag}">${objectData.tag}</a>]</td>
     <td><a href="https://www.nitrotype.com/racer/${objectData.username}">${objectData.username}</a></td>
         <td>${objectData.racesPlayed}</td>
