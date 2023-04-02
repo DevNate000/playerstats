@@ -151,7 +151,7 @@ fetch(`https://scraper.nt-verse.com/api/racer/billy33`).then((data)=>{
 })
 // ----------------------------------------------------------------------------------------- //
 
-fetch(`https://scraper.nt-verse.com/api/racer/billy33`).then((data)=>{
+fetch(`https://scraper.nt-verse.com/api/racer/iplayrlyah`).then((data)=>{
         return data.json();
 }).then((objectData)=>{
     let tableData=`<tr>
@@ -174,7 +174,7 @@ fetch(`https://scraper.nt-verse.com/api/racer/billy33`).then((data)=>{
 })
 // ----------------------------------------------------------------------------------------- //
 
-fetch(`https://scraper.nt-verse.com/api/racer/billy33`).then((data)=>{
+fetch(`https://scraper.nt-verse.com/api/racer/marlee_surfer`).then((data)=>{
         return data.json();
 }).then((objectData)=>{
     let tableData=`<tr>
@@ -197,7 +197,7 @@ fetch(`https://scraper.nt-verse.com/api/racer/billy33`).then((data)=>{
 })
 // ----------------------------------------------------------------------------------------- //
 
-fetch(`https://scraper.nt-verse.com/api/racer/billy33`).then((data)=>{
+fetch(`https://scraper.nt-verse.com/api/racer/terry123wt`).then((data)=>{
         return data.json();
 }).then((objectData)=>{
     let tableData=`<tr>
@@ -220,7 +220,7 @@ fetch(`https://scraper.nt-verse.com/api/racer/billy33`).then((data)=>{
 })
 // ----------------------------------------------------------------------------------------- //
 
-fetch(`https://scraper.nt-verse.com/api/racer/billy33`).then((data)=>{
+fetch(`https://scraper.nt-verse.com/api/racer/537565`).then((data)=>{
         return data.json();
 }).then((objectData)=>{
     let tableData=`<tr>
