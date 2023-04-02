@@ -149,3 +149,95 @@ fetch(`https://scraper.nt-verse.com/api/racer/billy33`).then((data)=>{
 })  .catch((err)=>{
     console.log(err);
 })
+// ----------------------------------------------------------------------------------------- //
+
+fetch(`https://scraper.nt-verse.com/api/racer/billy33`).then((data)=>{
+        return data.json();
+}).then((objectData)=>{
+    let tableData=`<tr>
+    <td>🏎</td>    
+    <td><img class="tinyimg" src="https://www.nitrotype.com/cars/painted/${objectData.carID}_large_1_10.png" alt="carimg"></td>
+    <td>[<a href="https://www.nitrotype.com/team/${objectData.tag}">${objectData.tag}</a>]</td>
+    <td><a href="https://www.nitrotype.com/racer/${objectData.username}">${objectData.username}</a></td>
+        <td>${objectData.racesPlayed}</td>
+        <td>${objectData.avgSpeed}</td>
+        <td>${objectData.highestSpeed}</td>
+        <td>${objectData.level}</td>
+        <td>${objectData.longestSession}</td>
+        <td>${objectData.profileViews}</td>
+        <td>${objectData.totalCars}</td>
+        <td>${objectData.createdStamp /86400 + 3/30/23 * (1970,1,1)-0.167}</td>
+        </tr>`;
+    document.getElementById("4guest_table").innerHTML=tableData;
+})  .catch((err)=>{
+    console.log(err);
+})
+// ----------------------------------------------------------------------------------------- //
+
+fetch(`https://scraper.nt-verse.com/api/racer/billy33`).then((data)=>{
+        return data.json();
+}).then((objectData)=>{
+    let tableData=`<tr>
+    <td>🏎</td>    
+    <td><img class="tinyimg" src="https://www.nitrotype.com/cars/painted/${objectData.carID}_large_1_10.png" alt="carimg"></td>
+    <td>[<a href="https://www.nitrotype.com/team/${objectData.tag}">${objectData.tag}</a>]</td>
+    <td><a href="https://www.nitrotype.com/racer/${objectData.username}">${objectData.username}</a></td>
+        <td>${objectData.racesPlayed}</td>
+        <td>${objectData.avgSpeed}</td>
+        <td>${objectData.highestSpeed}</td>
+        <td>${objectData.level}</td>
+        <td>${objectData.longestSession}</td>
+        <td>${objectData.profileViews}</td>
+        <td>${objectData.totalCars}</td>
+        <td>${objectData.createdStamp /86400 + 3/30/23 * (1970,1,1)-0.167}</td>
+        </tr>`;
+    document.getElementById("5guest_table").innerHTML=tableData;
+})  .catch((err)=>{
+    console.log(err);
+})
+// ----------------------------------------------------------------------------------------- //
+
+fetch(`https://scraper.nt-verse.com/api/racer/billy33`).then((data)=>{
+        return data.json();
+}).then((objectData)=>{
+    let tableData=`<tr>
+    <td>🏎</td>    
+    <td><img class="tinyimg" src="https://www.nitrotype.com/cars/painted/${objectData.carID}_large_1_10.png" alt="carimg"></td>
+    <td>[<a href="https://www.nitrotype.com/team/${objectData.tag}">${objectData.tag}</a>]</td>
+    <td><a href="https://www.nitrotype.com/racer/${objectData.username}">${objectData.username}</a></td>
+        <td>${objectData.racesPlayed}</td>
+        <td>${objectData.avgSpeed}</td>
+        <td>${objectData.highestSpeed}</td>
+        <td>${objectData.level}</td>
+        <td>${objectData.longestSession}</td>
+        <td>${objectData.profileViews}</td>
+        <td>${objectData.totalCars}</td>
+        <td>${objectData.createdStamp /86400 + 3/30/23 * (1970,1,1)-0.167}</td>
+        </tr>`;
+    document.getElementById("6guest_table").innerHTML=tableData;
+})  .catch((err)=>{
+    console.log(err);
+})
+// ----------------------------------------------------------------------------------------- //
+
+fetch(`https://scraper.nt-verse.com/api/racer/billy33`).then((data)=>{
+        return data.json();
+}).then((objectData)=>{
+    let tableData=`<tr>
+    <td>🏎</td>    
+    <td><img class="tinyimg" src="https://www.nitrotype.com/cars/painted/${objectData.carID}_large_1_10.png" alt="carimg"></td>
+    <td>[<a href="https://www.nitrotype.com/team/${objectData.tag}">${objectData.tag}</a>]</td>
+    <td><a href="https://www.nitrotype.com/racer/${objectData.username}">${objectData.username}</a></td>
+        <td>${objectData.racesPlayed}</td>
+        <td>${objectData.avgSpeed}</td>
+        <td>${objectData.highestSpeed}</td>
+        <td>${objectData.level}</td>
+        <td>${objectData.longestSession}</td>
+        <td>${objectData.profileViews}</td>
+        <td>${objectData.totalCars}</td>
+        <td>${objectData.createdStamp /86400 + 3/30/23 * (1970,1,1)-0.167}</td>
+        </tr>`;
+    document.getElementById("7guest_table").innerHTML=tableData;
+})  .catch((err)=>{
+    console.log(err);
+})
