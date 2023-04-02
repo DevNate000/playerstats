@@ -12,7 +12,7 @@ fetch(`https://scraper.nt-verse.com/api/racer/nathaniel818`).then((data)=>{
 }).then((objectData)=>{
     let tableData=`<tr>
     <td><img class="tinyimg" src="car_nate.png" alt="ytdriver"></td>  
-    <td><img class="tinyimg" src="https://www.nitrotype.com/cars/painted/${objectData.carID}_large_1_10.png" alt="carimg"></td>                
+    <td><img class="tinyimg" src="https://www.nitrotype.com/cars/painted/${objectData.carID}_large_1_10.png" alt="ci"></td>                
     <td>[<a href="https://www.nitrotype.com/team/${objectData.tag}">${objectData.tag}</a>]</td>
     <td><a href="https://www.nitrotype.com/racer/${objectData.username}">${objectData.username}</a></td>
         <td class="races">${objectData.racesPlayed}</td>
@@ -38,7 +38,7 @@ fetch(`https://scraper.nt-verse.com/api/racer/toonidy`).then((data)=>{
 }).then((objectData)=>{
     let tableData=`<tr>
     <td><img class="tinyimg" src="car_toonidy.png" alt="ytdriver"></td> 
-    <td><img class="tinyimg" src="https://www.nitrotype.com/cars/painted/${objectData.carID}_large_1_10.png" alt="carimg"></td>
+    <td><img class="tinyimg" src="https://www.nitrotype.com/cars/painted/${objectData.carID}_large_1_10.png" alt="ci"></td>
     <td>[<a href="https://www.nitrotype.com/team/${objectData.tag}">${objectData.tag}</a>]</td>
     <td><a href="https://www.nitrotype.com/racer/${objectData.username}">${objectData.username}</a></td>
         <td>${objectData.racesPlayed}</td>
@@ -64,7 +64,7 @@ fetch(`https://scraper.nt-verse.com/api/racer/travis`).then((data)=>{
 }).then((objectData)=>{
     let tableData=`<tr>
     <td><img class="tinyimg" src="car_travis.png" alt="ytdriver"></td>    
-    <td><img class="tinyimg" src="https://www.nitrotype.com/cars/painted/${objectData.carID}_large_1_10.png" alt="carimg"></td>
+    <td><img class="tinyimg" src="https://www.nitrotype.com/cars/painted/${objectData.carID}_large_1_10.png" alt="ci"></td>
     <td>[<a href="https://www.nitrotype.com/team/${objectData.tag}">${objectData.tag}</a>]</td>
     <td><a href="https://www.nitrotype.com/racer/${objectData.username}">${objectData.username}</a></td>
         <td>${objectData.racesPlayed}</td>
@@ -87,7 +87,7 @@ fetch(`https://scraper.nt-verse.com/api/racer/moilyn`).then((data)=>{
 }).then((objectData)=>{
     let tableData=`<tr>
     <td>🏎</td>    
-    <td><img class="tinyimg" src="https://www.nitrotype.com/cars/painted/${objectData.carID}_large_1_10.png" alt="carimg"></td>
+    <td><img class="tinyimg" src="https://www.nitrotype.com/cars/painted/${objectData.carID}_large_1_10.png" alt="ci"></td>
     <td>[<a href="https://www.nitrotype.com/team/${objectData.tag}">${objectData.tag}</a>]</td>
     <td><a href="https://www.nitrotype.com/racer/${objectData.username}">${objectData.username}</a></td>
         <td>${objectData.racesPlayed}</td>
@@ -110,7 +110,7 @@ fetch(`https://scraper.nt-verse.com/api/racer/toughboy05`).then((data)=>{
 }).then((objectData)=>{
     let tableData=`<tr>
     <td>🏎</td>    
-    <td><img class="tinyimg" src="https://www.nitrotype.com/cars/painted/${objectData.carID}_large_1_10.png" alt="carimg"></td>
+    <td><img class="tinyimg" src="https://www.nitrotype.com/cars/painted/${objectData.carID}_large_1_10.png" alt="ci"></td>
     <td>[<a href="https://www.nitrotype.com/team/${objectData.tag}">${objectData.tag}</a>]</td>
     <td><a href="https://www.nitrotype.com/racer/${objectData.username}">${objectData.username}</a></td>
         <td>${objectData.racesPlayed}</td>
@@ -133,7 +133,7 @@ fetch(`https://scraper.nt-verse.com/api/racer/billy33`).then((data)=>{
 }).then((objectData)=>{
     let tableData=`<tr>
     <td>🏎</td>    
-    <td><img class="tinyimg" src="https://www.nitrotype.com/cars/painted/${objectData.carID}_large_1_10.png" alt="carimg"></td>
+    <td><img class="tinyimg" src="https://www.nitrotype.com/cars/painted/${objectData.carID}_large_1_10.png" alt="ci"></td>
     <td>[<a href="https://www.nitrotype.com/team/${objectData.tag}">${objectData.tag}</a>]</td>
     <td><a href="https://www.nitrotype.com/racer/${objectData.username}">${objectData.username}</a></td>
         <td>${objectData.racesPlayed}</td>
@@ -156,7 +156,7 @@ fetch(`https://scraper.nt-verse.com/api/racer/iplayrlyah`).then((data)=>{
 }).then((objectData)=>{
     let tableData=`<tr>
     <td>🏎</td>    
-    <td><img class="tinyimg" src="https://www.nitrotype.com/cars/painted/${objectData.carID}_large_1_10.png" alt="carimg"></td>
+    <td><img class="tinyimg" src="https://www.nitrotype.com/cars/painted/${objectData.carID}_large_1_10.png" alt="ci"></td>
     <td>[<a href="https://www.nitrotype.com/team/${objectData.tag}">${objectData.tag}</a>]</td>
     <td><a href="https://www.nitrotype.com/racer/${objectData.username}">${objectData.username}</a></td>
         <td>${objectData.racesPlayed}</td>
@@ -179,7 +179,7 @@ fetch(`https://scraper.nt-verse.com/api/racer/marlee_surfer`).then((data)=>{
 }).then((objectData)=>{
     let tableData=`<tr>
     <td>🏎</td>    
-    <td><img class="tinyimg" src="https://www.nitrotype.com/cars/painted/${objectData.carID}_large_1_10.png" alt="carimg"></td>
+    <td><img class="tinyimg" src="https://www.nitrotype.com/cars/painted/${objectData.carID}_large_1_10.png" alt="ci"></td>
     <td>[<a href="https://www.nitrotype.com/team/${objectData.tag}">${objectData.tag}</a>]</td>
     <td><a href="https://www.nitrotype.com/racer/${objectData.username}">${objectData.username}</a></td>
         <td>${objectData.racesPlayed}</td>
@@ -202,7 +202,7 @@ fetch(`https://scraper.nt-verse.com/api/racer/terry123wt`).then((data)=>{
 }).then((objectData)=>{
     let tableData=`<tr>
     <td>🏎</td>    
-    <td><img class="tinyimg" src="https://www.nitrotype.com/cars/painted/${objectData.carID}_large_1_10.png" alt="carimg"></td>
+    <td><img class="tinyimg" src="https://www.nitrotype.com/cars/painted/${objectData.carID}_large_1_10.png" alt="ci"></td>
     <td>[<a href="https://www.nitrotype.com/team/${objectData.tag}">${objectData.tag}</a>]</td>
     <td><a href="https://www.nitrotype.com/racer/${objectData.username}">${objectData.username}</a></td>
         <td>${objectData.racesPlayed}</td>
@@ -225,7 +225,7 @@ fetch(`https://scraper.nt-verse.com/api/racer/537565`).then((data)=>{
 }).then((objectData)=>{
     let tableData=`<tr>
     <td>🏎</td>    
-    <td><img class="tinyimg" src="https://www.nitrotype.com/cars/painted/${objectData.carID}_large_1_10.png" alt="carimg"></td>
+    <td><img class="tinyimg" src="https://www.nitrotype.com/cars/painted/${objectData.carID}_large_1_10.png" alt="ci"></td>
     <td>[<a href="https://www.nitrotype.com/team/${objectData.tag}">${objectData.tag}</a>]</td>
     <td><a href="https://www.nitrotype.com/racer/${objectData.username}">${objectData.username}</a></td>
         <td>${objectData.racesPlayed}</td>
