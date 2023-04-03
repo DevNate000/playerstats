@@ -15,7 +15,7 @@ fetch(`https://scraper.nt-verse.com/api/racer/nathaniel818`).then((data)=>{
     let tableData=`<tr>
     <h1>[<a href="https://www.nitrotype.com/team/${objectData.tag}">${objectData.tag}]<a href="https://www.nitrotype.com/racer/${objectData.username}">${objectData.username}</a></h1>
         <h7 class="gold">"${objectData.title}"</h7>
-        <h3 class="gold">${objectData.level}</h3>
+        <h3>LVL </h3> <h3 class="gold">${objectData.level}</h3>
         <h2>${objectData.avgSpeed}</h2>
         <p>Avg WPM</p>
         <h3 class="gold">${objectData.highestSpeed}</h3>
