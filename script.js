@@ -197,29 +197,6 @@ fetch(`https://scraper.nt-verse.com/api/racer/marlee_surfer`).then((data)=>{
 })
 // ----------------------------------------------------------------------------------------- //
 
-fetch(`https://scraper.nt-verse.com/api/racer/terry123wt`).then((data)=>{
-        return data.json();
-}).then((objectData)=>{
-    let tableData=`<tr>
-    <td>🏎</td>    
-    <td><img class="tinyimg" src="https://www.nitrotype.com/cars/painted/${objectData.carID}_large_1_10.png" alt="©"></td>
-    <td>[<a href="https://www.nitrotype.com/team/${objectData.tag}">${objectData.tag}</a>]</td>
-    <td><a href="https://www.nitrotype.com/racer/${objectData.username}">${objectData.username}</a></td>
-        <td>${objectData.racesPlayed}</td>
-        <td>${objectData.avgSpeed}</td>
-        <td>${objectData.highestSpeed}</td>
-        <td>${objectData.level}</td>
-        <td>${objectData.longestSession}</td>
-        <td>${objectData.profileViews}</td>
-        <td>${objectData.totalCars}</td>
-        <td>${objectData.createdStamp /86400 + 3/30/23 * (1970,1,1)-0.167}</td>
-        </tr>`;
-    document.getElementById("6guest_table").innerHTML=tableData;
-})  .catch((err)=>{
-    console.log(err);
-})
-// ----------------------------------------------------------------------------------------- //
-
 fetch(`https://scraper.nt-verse.com/api/racer/537565`).then((data)=>{
         return data.json();
 }).then((objectData)=>{
@@ -237,7 +214,7 @@ fetch(`https://scraper.nt-verse.com/api/racer/537565`).then((data)=>{
         <td>${objectData.totalCars}</td>
         <td>${objectData.createdStamp /86400 + 3/30/23 * (1970,1,1)-0.167}</td>
         </tr>`;
-    document.getElementById("7guest_table").innerHTML=tableData;
+    document.getElementById("6guest_table").innerHTML=tableData;
 })  .catch((err)=>{
     console.log(err);
 })
