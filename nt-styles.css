@@ -1,64 +1,23 @@
 /* Main */
-
-  /* background-image: linear-gradient(90deg, #658cf7, #4f7bf3, #1151ff); */
-  
-
-
 body {
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 60s ease infinite;
-	height: 100vh;
+	background-color: #2e3141;
+  color: white
 }
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-
-
-
-
-/*Car Images*/
-
-img {
-    width: 500px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.tinyimg {
-  width: 50px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-a {
-  color: black;
-}
-
 
 
 /* Table */
 
-.races {
+.gold {
   font-weight: bold;
-  color: yellow;
+  color: gold;
 }
 .views {
   font-weight: bold;
   color: lime;
 }
-
+.container {
+  max-width: 1350px;
+}
 
 .name-stats{
   font-size: 40px;
@@ -67,22 +26,33 @@ a {
   margin: auto;
 }
 
-.table-bordered {
-  text-align: center;
-}
-
-.table-bordered td {
-  padding: 6px;
-}
-.table-bordered th {
-  padding: 1px;
-}
-.container {
-  max-width: 1350px;
-}
 
 
 
+
+
+
+
+
+
+
+
+
+/*Car Images*/
+
+img {
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transform: rotate(165deg);
+}
+a {
+color: white;
+}
+a:hover {
+  color: rgb(235, 235, 235);
+  }
 
 /* Nav Bar */
 
@@ -142,4 +112,8 @@ a {
   .topnav a.activea {
     background: linear-gradient(45deg, #e8823e, #d96619, #c75102);
     color: white;
+} 
+.topnav a.activer {
+  background: linear-gradient(45deg, #000000, #282828, #535353);
+  color: white;
 } 
