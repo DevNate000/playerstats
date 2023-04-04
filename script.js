@@ -10,7 +10,7 @@
 fetch(`https://scraper.nt-verse.com/api/racer/nathaniel818`).then((data)=>{
         return data.json();
 }).then((objectData)=>{
-    let membershipImage = objectData.membership === "gold" ? '<img class="membershipimg" src="gold.png">' : '<img class="membershipimg" src="basic.png">';
+    let membershipImage = objectData.membership === "gold" ? '<img class="membershipimg" src="image/gold.png">' : '<img class="membershipimg" src="image/basic.png">';
     let carAssetkey = objectData.carID === 333 ? "ytdriver" : "othercar";
     let carHueAngle = objectData.carHueAngle === 0 ? 10 : objectData.carHueAngle;
     let tableData = `
@@ -40,7 +40,7 @@ fetch(`https://scraper.nt-verse.com/api/racer/nathaniel818`).then((data)=>{
 fetch(`https://scraper.nt-verse.com/api/racer/nathaniel818`).then((data)=>{
         return data.json();
 }).then((objectData)=>{
-    let membershipImage = objectData.membership === "gold" ? '<img class="membershipimg" src="gold.png">' : '<img class="membershipimg" src="basic.png">';
+    let membershipImage = objectData.membership === "gold" ? '<img class="membershipimg" src="image/gold.png">' : '<img class="membershipimg" src="image/basic.png">';
     let carAssetkey = objectData.carID === 333 ? "ytdriver" : "othercar";
     let carHueAngle = objectData.carHueAngle === 0 ? 10 : objectData.carHueAngle;
     let tableData=`<tr>
@@ -69,9 +69,9 @@ fetch(`https://scraper.nt-verse.com/api/racer/nathaniel818`).then((data)=>{
 fetch(`https://scraper.nt-verse.com/api/racer/toonidy`).then((data)=>{
         return data.json();
 }).then((objectData)=>{
-    let membershipImage = objectData.membership === "gold" ? '<img class="membershipimg" src="gold.png">' : '<img class="membershipimg" src="basic.png">';
+    let membershipImage = objectData.membership === "gold" ? '<img class="membershipimg" src="image/gold.png">' : '<img class="membershipimg" src="image/basic.png">';
     let tableData=`<tr>
-    <td><img class="tinyimg" src="car_toonidy.png" alt="ytdriver"></td> 
+    <td><img class="tinyimg" src="image/car_toonidy.png" alt="ytdriver"></td> 
     <td><img class="tinyimg" src="https://www.nitrotype.com/cars/painted/${objectData.carID}_large_1_10.png" alt="©"></td>
     <td class="membershipimg">${membershipImage}</td>
     <td>[<a href="https://www.nitrotype.com/team/${objectData.tag}">${objectData.tag}</a>]</td>
@@ -97,9 +97,9 @@ fetch(`https://scraper.nt-verse.com/api/racer/toonidy`).then((data)=>{
 fetch(`https://scraper.nt-verse.com/api/racer/travis`).then((data)=>{
         return data.json();
 }).then((objectData)=>{
-    let membershipImage = objectData.membership === "gold" ? '<img class="membershipimg" src="gold.png">' : '<img class="membershipimg" src="basic.png">';
+    let membershipImage = objectData.membership === "gold" ? '<img class="membershipimg" src="image/gold.png">' : '<img class="membershipimg" src="image/basic.png">';
     let tableData=`<tr>
-    <td><img class="tinyimg" src="car_toonidy.png" alt="ytdriver"></td> 
+    <td><img class="tinyimg" src="image/car_toonidy.png" alt="ytdriver"></td> 
     <td><img class="tinyimg" src="https://www.nitrotype.com/cars/painted/${objectData.carID}_large_1_10.png" alt="©"></td>
     <td class="membershipimg">${membershipImage}</td>
     <td>[<a href="https://www.nitrotype.com/team/${objectData.tag}">${objectData.tag}</a>]</td>
@@ -122,9 +122,9 @@ fetch(`https://scraper.nt-verse.com/api/racer/travis`).then((data)=>{
 fetch(`https://scraper.nt-verse.com/api/racer/grue8`).then((data)=>{
         return data.json();
 }).then((objectData)=>{
-    let membershipImage = objectData.membership === "gold" ? '<img class="membershipimg" src="gold.png">' : '<img class="membershipimg" src="basic.png">';
+    let membershipImage = objectData.membership === "gold" ? '<img class="membershipimg" src="image/gold.png">' : '<img class="membershipimg" src="basic.png">';
     let tableData=`<tr>
-    <td><img class="tinyimg" src="car_toonidy.png" alt="ytdriver"></td> 
+    <td><img class="tinyimg" src="image/car_toonidy.png" alt="ytdriver"></td> 
     <td><img class="tinyimg" src="https://www.nitrotype.com/cars/painted/${objectData.carID}_large_1_10.png" alt="©"></td>
     <td class="membershipimg">${membershipImage}</td>
     <td>[<a href="https://www.nitrotype.com/team/${objectData.tag}">${objectData.tag}</a>]</td>
