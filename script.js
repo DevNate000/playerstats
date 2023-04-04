@@ -11,7 +11,7 @@ fetch(`https://scraper.nt-verse.com/api/racer/nathaniel818`).then((data)=>{
         return data.json();
 }).then((objectData)=>{
     let membershipImage = objectData.membership === "gold" ? '<img class="membershipimg" src="image/gold.png">' : '<img class="membershipimg" src="image/basic.png">';
-    let carAssetkey = objectData.carID === 333 ? "ytdriver" : "othercar";
+    let carAssetkey = objectData.carID === 333 ? "ytdriver" : objectData.carID;
     let carHueAngle = objectData.carHueAngle === 0 ? 10 : objectData.carHueAngle;
     let largeValue = objectData.carID >= 227 ? "_large_" : "_large_1_";
     let tableData = `
@@ -20,14 +20,14 @@ fetch(`https://scraper.nt-verse.com/api/racer/nathaniel818`).then((data)=>{
         <h3>LVL ${objectData.level}</h3>
         <h2>${objectData.avgSpeed}</h2>
         <p>Avg WPM</p>
-        <h2>${largeValue}</h2>
+        <h2>https://www.nitrotype.com/cars/painted/${carAssetkey}${largeValue}${carHueAngle}.png </h2>                        
         <h3 class="gold">${objectData.highestSpeed}</h3>
         <p class="gold">Top WPM</p>
         <h5 class="races">${objectData.racesPlayed} Total Races</h5>
         <p>Profile Views ${objectData.profileViews}</p>
         <p>Longest Session ${objectData.longestSession}</p>
-        <img class="largeimg" src="https://www.nitrotype.com/cars/painted/${carAssetkey}${largeValue}${carHueAngle}.png" alt="©">                        
-        </tr>`;
+        <img class="largeimg" src="https://www.nitrotype.com/cars/painted/${carAssetkey}${largeValue}${carHueAngle}.png" alt="©">
+        `;
     document.getElementById("nathaniel818_stats").innerHTML=tableData;
 })  .catch((err)=>{
     console.log(err);
@@ -43,7 +43,7 @@ fetch(`https://scraper.nt-verse.com/api/racer/nathaniel818`).then((data)=>{
         return data.json();
 }).then((objectData)=>{
     let membershipImage = objectData.membership === "gold" ? '<img class="membershipimg" src="image/gold.png">' : '<img class="membershipimg" src="image/basic.png">';
-    let carAssetkey = objectData.carID === 333 ? "ytdriver" : "othercar";
+    let carAssetkey = objectData.carID === 333 ? "ytdriver" : objectData.carID;
     let carHueAngle = objectData.carHueAngle === 0 ? 10 : objectData.carHueAngle;
     let tableData=`<tr>
     <td><img class="tinyimg" src="https://www.nitrotype.com/cars/painted/${carAssetkey}_large_${carHueAngle}.png" alt="©"></td> 
