@@ -16,19 +16,22 @@ fetch(`https://scraper.nt-verse.com/api/racer/nathaniel818`).then((data)=>{
     let carAssetkey = objectData.carID === 333 ? "ytdriver" : objectData.carID;
     let carHueAngle = objectData.carHueAngle === 0 ? 10 : objectData.carHueAngle;
     let largeValue = objectData.carID >= 227 ? "_large_" : "_large_1_";
-    let maxseasonlevel = 25;
+    let racenum = objectData.racesPlayed; var races = racenum.toLocaleString('en-US');    
+    let viewsnum = objectData.profileViews; var views = viewsnum.toLocaleString('en-US'); 
+    let maxseasonlevel = 25;   
     let infinateValue = objectData.level >= maxseasonlevel ? "∞" : "‎ ";
     let levelValue = objectData.level >= maxseasonlevel ? objectData.level-25 : objectData.level;
     let tableData = `
         <h1>${membershipImage} [<a href="https://www.nitrotype.com/team/${objectData.tag}">${objectData.tag}]<a href="https://www.nitrotype.com/racer/${objectData.username}">${objectData.username}</a></h1>
         <h7 class="gold">"${objectData.title}"</h7>
         <h3>LVL ${infinateValue}${levelValue}</h3>
+        <h7>${objectData.createdStamp /86400 + 3/30/23 * (1970,1,1)-0.167}</h7>
         <h2>${objectData.avgSpeed}</h2>
         <p>Avg WPM</p>
         <h3 class="gold">${objectData.highestSpeed}</h3>
         <p class="gold">Top WPM</p>
-        <h5 class="races">${objectData.racesPlayed} Total Races</h5>
-        <p>Profile Views ${objectData.profileViews}</p>
+        <h5 class="races">${races} Total Races</h5>
+        <p>Profile Views ${views}</p>
         <p>Longest Session ${objectData.longestSession}</p>
         <img class="largeimg" src="https://www.nitrotype.com/cars/painted/${carAssetkey}${largeValue}${carHueAngle}.png" alt="©">
         `;
