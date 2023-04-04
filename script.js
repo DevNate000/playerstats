@@ -2,6 +2,9 @@
 // scrapper username //
 // name_table //
 
+// SEASON LEVEL //
+
+
 // ----------------------------------------------------------------------------------------- //
 // ----------------------------------------------------------------------------------------- //
 // ----------------------------------------------------------------------------------------- //
@@ -13,10 +16,12 @@ fetch(`https://scraper.nt-verse.com/api/racer/nathaniel818`).then((data)=>{
     let carAssetkey = objectData.carID === 333 ? "ytdriver" : objectData.carID;
     let carHueAngle = objectData.carHueAngle === 0 ? 10 : objectData.carHueAngle;
     let largeValue = objectData.carID >= 227 ? "_large_" : "_large_1_";
+    let infinateValue = objectData.level >= 25 ? "∞" : "‎ ";
+    let levelValue = objectData.level >= 25 ? objectData.level-25 : objectData.level;
     let tableData = `
         <h1>${membershipImage} [<a href="https://www.nitrotype.com/team/${objectData.tag}">${objectData.tag}]<a href="https://www.nitrotype.com/racer/${objectData.username}">${objectData.username}</a></h1>
         <h7 class="gold">"${objectData.title}"</h7>
-        <h3>LVL ${objectData.level}</h3>
+        <h3>LVL ${infinateValue}${levelValue}</h3>
         <h2>${objectData.avgSpeed}</h2>
         <p>Avg WPM</p>
         <h3 class="gold">${objectData.highestSpeed}</h3>
@@ -44,6 +49,8 @@ fetch(`https://scraper.nt-verse.com/api/racer/nathaniel818`).then((data)=>{
     let carAssetkey = objectData.carID === 333 ? "ytdriver" : objectData.carID;
     let carHueAngle = objectData.carHueAngle === 0 ? 10 : objectData.carHueAngle;
     let largeValue = objectData.carID >= 227 ? "_large_" : "_large_1_";
+    let infinateValue = objectData.level >= 25 ? "∞" : "‎ ";
+    let levelValue = objectData.level >= 25 ? objectData.level-25 : objectData.level;
     let tableData = `<tr>
     <td><img class="tinyimg" src="https://www.nitrotype.com/cars/painted/${carAssetkey}${largeValue}${carHueAngle}.png" alt="©"></td> 
     <td class="membershipimg">${membershipImage}</td>
@@ -52,7 +59,7 @@ fetch(`https://scraper.nt-verse.com/api/racer/nathaniel818`).then((data)=>{
         <td class="races">${objectData.racesPlayed}</td>
         <td>${objectData.avgSpeed}</td>
         <td>${objectData.highestSpeed}</td>
-        <td>${objectData.level}</td>
+        <td>${infinateValue}${levelValue}</td>
         <td>${objectData.longestSession}</td>
         <td class="views">${objectData.profileViews}</td>
         <td>${objectData.totalCars}</td>
@@ -74,6 +81,8 @@ fetch(`https://scraper.nt-verse.com/api/racer/toonidy`).then((data)=>{
     let carAssetkey = objectData.carID === 333 ? "ytdriver" : objectData.carID;
     let carHueAngle = objectData.carHueAngle === 0 ? 10 : objectData.carHueAngle;
     let largeValue = objectData.carID >= 227 ? "_large_" : "_large_1_";
+    let infinateValue = objectData.level >= 25 ? "∞" : "‎ ";
+    let levelValue = objectData.level >= 25 ? objectData.level-25 : objectData.level;
     let tableData = `<tr>
     <td><img class="tinyimg" src="https://www.nitrotype.com/cars/painted/${carAssetkey}${largeValue}${carHueAngle}.png" alt="©"></td> 
     <td class="membershipimg">${membershipImage}</td>
@@ -82,7 +91,7 @@ fetch(`https://scraper.nt-verse.com/api/racer/toonidy`).then((data)=>{
         <td class="races">${objectData.racesPlayed}</td>
         <td>${objectData.avgSpeed}</td>
         <td>${objectData.highestSpeed}</td>
-        <td>${objectData.level}</td>
+        <td>${infinateValue}${levelValue}</td>
         <td>${objectData.longestSession}</td>
         <td class="views">${objectData.profileViews}</td>
         <td>${objectData.totalCars}</td>
@@ -104,6 +113,8 @@ fetch(`https://scraper.nt-verse.com/api/racer/travis`).then((data)=>{
     let carAssetkey = objectData.carID === 333 ? "ytdriver" : objectData.carID;
     let carHueAngle = objectData.carHueAngle === 0 ? 10 : objectData.carHueAngle;
     let largeValue = objectData.carID >= 227 ? "_large_" : "_large_1_";
+    let infinateValue = objectData.level >= 25 ? "∞" : "‎ ";
+    let levelValue = objectData.level >= 25 ? objectData.level-25 : objectData.level;
     let tableData = `<tr>
     <td><img class="tinyimg" src="https://www.nitrotype.com/cars/painted/${carAssetkey}${largeValue}${carHueAngle}.png" alt="©"></td> 
     <td class="membershipimg">${membershipImage}</td>
@@ -112,7 +123,7 @@ fetch(`https://scraper.nt-verse.com/api/racer/travis`).then((data)=>{
         <td class="races">${objectData.racesPlayed}</td>
         <td>${objectData.avgSpeed}</td>
         <td>${objectData.highestSpeed}</td>
-        <td>${objectData.level}</td>
+        <td>${infinateValue}${levelValue}</td>
         <td>${objectData.longestSession}</td>
         <td class="views">${objectData.profileViews}</td>
         <td>${objectData.totalCars}</td>
@@ -131,6 +142,8 @@ fetch(`https://scraper.nt-verse.com/api/racer/grue8`).then((data)=>{
     let carAssetkey = objectData.carID === 333 ? "ytdriver" : objectData.carID;
     let carHueAngle = objectData.carHueAngle === 0 ? 10 : objectData.carHueAngle;
     let largeValue = objectData.carID >= 227 ? "_large_" : "_large_1_";
+    let infinateValue = objectData.level >= 25 ? "∞" : "‎ ";
+    let levelValue = objectData.level >= 25 ? objectData.level-25 : objectData.level;
     let tableData = `<tr>
     <td><img class="tinyimg" src="https://www.nitrotype.com/cars/painted/${carAssetkey}${largeValue}${carHueAngle}.png" alt="©"></td> 
     <td class="membershipimg">${membershipImage}</td>
@@ -139,7 +152,7 @@ fetch(`https://scraper.nt-verse.com/api/racer/grue8`).then((data)=>{
         <td class="races">${objectData.racesPlayed}</td>
         <td>${objectData.avgSpeed}</td>
         <td>${objectData.highestSpeed}</td>
-        <td>${objectData.level}</td>
+        <td>${infinateValue}${levelValue}</td>
         <td>${objectData.longestSession}</td>
         <td class="views">${objectData.profileViews}</td>
         <td>${objectData.totalCars}</td>
