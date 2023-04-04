@@ -13,18 +13,20 @@ fetch(`https://scraper.nt-verse.com/api/racer/nathaniel818`).then((data)=>{
     let membershipImage = objectData.membership === "gold" ? '<img class="membershipimg" src="image/gold.png">' : '<img class="membershipimg" src="image/basic.png">';
     let carAssetkey = objectData.carID === 333 ? "ytdriver" : "othercar";
     let carHueAngle = objectData.carHueAngle === 0 ? 10 : objectData.carHueAngle;
+    let largeValue = objectData.carID >= 227 ? "_large_" : "_large_1_";
     let tableData = `
         <h1>${membershipImage} [<a href="https://www.nitrotype.com/team/${objectData.tag}">${objectData.tag}]<a href="https://www.nitrotype.com/racer/${objectData.username}">${objectData.username}</a></h1>
         <h7 class="gold">"${objectData.title}"</h7>
         <h3>LVL ${objectData.level}</h3>
         <h2>${objectData.avgSpeed}</h2>
         <p>Avg WPM</p>
+        <h2>${largeValue}</h2>
         <h3 class="gold">${objectData.highestSpeed}</h3>
         <p class="gold">Top WPM</p>
         <h5 class="races">${objectData.racesPlayed} Total Races</h5>
         <p>Profile Views ${objectData.profileViews}</p>
         <p>Longest Session ${objectData.longestSession}</p>
-        <img class="largeimg" src="https://www.nitrotype.com/cars/painted/${carAssetkey}_large_${carHueAngle}.png" alt="©">                        
+        <img class="largeimg" src="https://www.nitrotype.com/cars/painted/${carAssetkey}${largeValue}${carHueAngle}.png" alt="©">                        
         </tr>`;
     document.getElementById("nathaniel818_stats").innerHTML=tableData;
 })  .catch((err)=>{
