@@ -7,9 +7,10 @@
 // ----------------------------------------------------------------------------------------- //
 // ----------------------------------------------------------------------------------------- //
 // ----------------------------------------------------------------------------------------- //
-
-fetch(`https://scraper.nt-verse.com/api/racer/nathaniel818`).then((data)=>{
+let racer = "toonidy";   
+fetch(`https://scraper.nt-verse.com/api/racer/${racer}`).then((data)=>{
         return data.json();
+        
 }).then((objectData)=>{
     let membershipImage = objectData.membership === "gold" ? '<img class="membershipimg" src="image/gold.png">' : '<img class="membershipimg" src="image/basic.png">';
     let carAssetkey = objectData.carID === 333 ? "ytdriver" : objectData.carID;
