@@ -22,7 +22,7 @@ fetch(`https://scraper.nt-verse.com/api/racer/nathaniel818`).then((data)=>{
     let crttimestamp = objectData.createdStamp; let date = new Date(crttimestamp * 1000); let month = date.getMonth() + 1; let day = date.getDate(); let year = date.getFullYear(); let formattedDate = `${month.toString().padStart(2, "")}/${day.toString().padStart(2, "")}/${year}`
     let tableData = `
     <div>
-        <h1 class="profileheader">${membershipImage} [<a href="https://www.nitrotype.com/team/${objectData.tag}">${objectData.tag}]<a href="https://www.nitrotype.com/racer/${objectData.username}">${objectData.displayName}</a></h1>
+        <h1 style="color:#${objectData.tagColor}" class="profileheader">${membershipImage} [<a style="color:#${objectData.tagColor}" href="https://www.nitrotype.com/team/${objectData.tag}">${objectData.tag}]<a href="https://www.nitrotype.com/racer/${objectData.username}">${objectData.displayName}</a></h1>
         <h7 class="title">"${objectData.title}"</h7>
         <h3 class="lvl">LVL</h3>
         <h3 class="lvl2">${infinateValue}${levelValue}</h3>
