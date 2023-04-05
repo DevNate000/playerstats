@@ -16,16 +16,16 @@ fetch(`https://scraper.nt-verse.com/api/racer/nathaniel818`).then((data)=>{
     let carAssetkey = objectData.carID === 333 ? "ytdriver" : objectData.carID;
     let carHueAngle = objectData.carHueAngle === 0 ? 10 : objectData.carHueAngle;
     let largeValue = objectData.carID >= 227 ? "_large_" : "_large_1_";
-    let racenum = objectData.racesPlayed; var races = racenum.toLocaleString('en-US');    
-    let viewsnum = objectData.profileViews; var views = viewsnum.toLocaleString('en-US'); 
+    let racenum = objectData.racesPlayed; var races = racenum.toLocaleString('en-US');    let viewsnum = objectData.profileViews; var views = viewsnum.toLocaleString('en-US'); 
     let maxseasonlevel = 25;   
     let infinateValue = objectData.level >= maxseasonlevel ? "∞" : "‎ ";
     let levelValue = objectData.level >= maxseasonlevel ? objectData.level-25 : objectData.level;
+    let crttimestamp = objectData.createdStamp; let date = new Date(crttimestamp * 1000); let month = date.getMonth() + 1; let day = date.getDate(); let year = date.getFullYear(); let formattedDate = `${month.toString().padStart(2, "0")}/${day.toString().padStart(2, "0")}/${year}`
     let tableData = `
         <h1>${membershipImage} [<a href="https://www.nitrotype.com/team/${objectData.tag}">${objectData.tag}]<a href="https://www.nitrotype.com/racer/${objectData.username}">${objectData.username}</a></h1>
         <h7 class="gold">"${objectData.title}"</h7>
         <h3>LVL ${infinateValue}${levelValue}</h3>
-        <h7>${objectData.createdStamp /86400 + 3/30/23 * (1970,1,1)-0.167}</h7>
+        <h7>Member Since ${formattedDate}</h7>
         <h2>${objectData.avgSpeed}</h2>
         <p>Avg WPM</p>
         <h3 class="gold">${objectData.highestSpeed}</h3>
@@ -53,22 +53,24 @@ fetch(`https://scraper.nt-verse.com/api/racer/nathaniel818`).then((data)=>{
     let carAssetkey = objectData.carID === 333 ? "ytdriver" : objectData.carID;
     let carHueAngle = objectData.carHueAngle === 0 ? 10 : objectData.carHueAngle;
     let largeValue = objectData.carID >= 227 ? "_large_" : "_large_1_";
+    let racenum = objectData.racesPlayed; var races = racenum.toLocaleString('en-US');    let viewsnum = objectData.profileViews; var views = viewsnum.toLocaleString('en-US'); 
     let maxseasonlevel = 25;
     let infinateValue = objectData.level >= maxseasonlevel ? "∞" : "‎ ";
     let levelValue = objectData.level >= maxseasonlevel ? objectData.level-25 : objectData.level;
+    let crttimestamp = objectData.createdStamp; let date = new Date(crttimestamp * 1000); let month = date.getMonth() + 1; let day = date.getDate(); let year = date.getFullYear(); let formattedDate = `${month.toString().padStart(2, "0")}/${day.toString().padStart(2, "0")}/${year}`
     let tableData = `<tr>
     <td><img class="tinyimg" src="https://www.nitrotype.com/cars/painted/${carAssetkey}${largeValue}${carHueAngle}.png" alt="©"></td> 
     <td class="membershipimg">${membershipImage}</td>
     <td>[<a href="https://www.nitrotype.com/team/${objectData.tag}">${objectData.tag}</a>]</td>
     <td><a href="https://www.nitrotype.com/racer/${objectData.username}">${objectData.username}</a></td>
-        <td class="races">${objectData.racesPlayed}</td>
+        <td class="races">${races}</td>
         <td>${objectData.avgSpeed}</td>
         <td>${objectData.highestSpeed}</td>
         <td>${infinateValue}${levelValue}</td>
         <td>${objectData.longestSession}</td>
-        <td class="views">${objectData.profileViews}</td>
+        <td class="views">${views}</td>
         <td>${objectData.totalCars}</td>
-        <td>${objectData.createdStamp /86400 + 3/30/23 * (1970,1,1)-0.167}</td>
+        <td>${formattedDate}</td>
         </tr>`;
     document.getElementById("nathaniel818_table").innerHTML=tableData;
 })  .catch((err)=>{
@@ -86,22 +88,24 @@ fetch(`https://scraper.nt-verse.com/api/racer/toonidy`).then((data)=>{
     let carAssetkey = objectData.carID === 333 ? "ytdriver" : objectData.carID;
     let carHueAngle = objectData.carHueAngle === 0 ? 10 : objectData.carHueAngle;
     let largeValue = objectData.carID >= 227 ? "_large_" : "_large_1_";
+    let racenum = objectData.racesPlayed; var races = racenum.toLocaleString('en-US');    let viewsnum = objectData.profileViews; var views = viewsnum.toLocaleString('en-US'); 
     let maxseasonlevel = 25;
     let infinateValue = objectData.level >= maxseasonlevel ? "∞" : "‎ ";
     let levelValue = objectData.level >= maxseasonlevel ? objectData.level-25 : objectData.level;
+    let crttimestamp = objectData.createdStamp; let date = new Date(crttimestamp * 1000); let month = date.getMonth() + 1; let day = date.getDate(); let year = date.getFullYear(); let formattedDate = `${month.toString().padStart(2, "0")}/${day.toString().padStart(2, "0")}/${year}`
     let tableData = `<tr>
     <td><img class="tinyimg" src="https://www.nitrotype.com/cars/painted/${carAssetkey}${largeValue}${carHueAngle}.png" alt="©"></td> 
     <td class="membershipimg">${membershipImage}</td>
     <td>[<a href="https://www.nitrotype.com/team/${objectData.tag}">${objectData.tag}</a>]</td>
     <td><a href="https://www.nitrotype.com/racer/${objectData.username}">${objectData.username}</a></td>
-        <td class="races">${objectData.racesPlayed}</td>
+        <td class="races">${races}</td>
         <td>${objectData.avgSpeed}</td>
         <td>${objectData.highestSpeed}</td>
         <td>${infinateValue}${levelValue}</td>
         <td>${objectData.longestSession}</td>
-        <td class="views">${objectData.profileViews}</td>
+        <td class="views">${views}</td>
         <td>${objectData.totalCars}</td>
-        <td>${objectData.createdStamp /86400 + 3/30/23 * (1970,1,1)-0.167}</td>
+        <td>${formattedDate}</td>
         </tr>`;
     document.getElementById("toonidy_table").innerHTML=tableData;
 })  .catch((err)=>{
@@ -119,22 +123,24 @@ fetch(`https://scraper.nt-verse.com/api/racer/travis`).then((data)=>{
     let carAssetkey = objectData.carID === 333 ? "ytdriver" : objectData.carID;
     let carHueAngle = objectData.carHueAngle === 0 ? 10 : objectData.carHueAngle;
     let largeValue = objectData.carID >= 227 ? "_large_" : "_large_1_";
+    let racenum = objectData.racesPlayed; var races = racenum.toLocaleString('en-US');    let viewsnum = objectData.profileViews; var views = viewsnum.toLocaleString('en-US'); 
     let maxseasonlevel = 25;
     let infinateValue = objectData.level >= maxseasonlevel ? "∞" : "‎ ";
     let levelValue = objectData.level >= maxseasonlevel ? objectData.level-25 : objectData.level;
+    let crttimestamp = objectData.createdStamp; let date = new Date(crttimestamp * 1000); let month = date.getMonth() + 1; let day = date.getDate(); let year = date.getFullYear(); let formattedDate = `${month.toString().padStart(2, "0")}/${day.toString().padStart(2, "0")}/${year}`
     let tableData = `<tr>
     <td><img class="tinyimg" src="https://www.nitrotype.com/cars/painted/${carAssetkey}${largeValue}${carHueAngle}.png" alt="©"></td> 
     <td class="membershipimg">${membershipImage}</td>
     <td>[<a href="https://www.nitrotype.com/team/${objectData.tag}">${objectData.tag}</a>]</td>
     <td><a href="https://www.nitrotype.com/racer/${objectData.username}">${objectData.username}</a></td>
-        <td class="races">${objectData.racesPlayed}</td>
+        <td class="races">${races}</td>
         <td>${objectData.avgSpeed}</td>
         <td>${objectData.highestSpeed}</td>
         <td>${infinateValue}${levelValue}</td>
         <td>${objectData.longestSession}</td>
-        <td class="views">${objectData.profileViews}</td>
+        <td class="views">${views}</td>
         <td>${objectData.totalCars}</td>
-        <td>${objectData.createdStamp /86400 + 3/30/23 * (1970,1,1)-0.167}</td>
+        <td>${formattedDate}</td>
         </tr>`;
     document.getElementById("travis_table").innerHTML=tableData;
 })  .catch((err)=>{
@@ -149,22 +155,24 @@ fetch(`https://scraper.nt-verse.com/api/racer/grue8`).then((data)=>{
     let carAssetkey = objectData.carID === 333 ? "ytdriver" : objectData.carID;
     let carHueAngle = objectData.carHueAngle === 0 ? 10 : objectData.carHueAngle;
     let largeValue = objectData.carID >= 227 ? "_large_" : "_large_1_";
+    let racenum = objectData.racesPlayed; var races = racenum.toLocaleString('en-US');    let viewsnum = objectData.profileViews; var views = viewsnum.toLocaleString('en-US'); 
     let maxseasonlevel = 25;
     let infinateValue = objectData.level >= maxseasonlevel ? "∞" : "‎ ";
     let levelValue = objectData.level >= maxseasonlevel ? objectData.level-25 : objectData.level;
+    let crttimestamp = objectData.createdStamp; let date = new Date(crttimestamp * 1000); let month = date.getMonth() + 1; let day = date.getDate(); let year = date.getFullYear(); let formattedDate = `${month.toString().padStart(2, "0")}/${day.toString().padStart(2, "0")}/${year}`
     let tableData = `<tr>
     <td><img class="tinyimg" src="https://www.nitrotype.com/cars/painted/${carAssetkey}${largeValue}${carHueAngle}.png" alt="©"></td> 
     <td class="membershipimg">${membershipImage}</td>
     <td>[<a href="https://www.nitrotype.com/team/${objectData.tag}">${objectData.tag}</a>]</td>
     <td><a href="https://www.nitrotype.com/racer/${objectData.username}">${objectData.username}</a></td>
-        <td class="races">${objectData.racesPlayed}</td>
+        <td class="races">${races}</td>
         <td>${objectData.avgSpeed}</td>
         <td>${objectData.highestSpeed}</td>
         <td>${infinateValue}${levelValue}</td>
         <td>${objectData.longestSession}</td>
-        <td class="views">${objectData.profileViews}</td>
+        <td class="views">${views}</td>
         <td>${objectData.totalCars}</td>
-        <td>${objectData.createdStamp /86400 + 3/30/23 * (1970,1,1)-0.167}</td>
+        <td>${formattedDate}</td>
         </tr>`;
     document.getElementById("1guest_table").innerHTML=tableData;
 })  .catch((err)=>{
