@@ -25,8 +25,10 @@ fetch(`https://scraper.nt-verse.com/api/racer/${racer}`).then((data)=>{
         <h1 style="color:#${objectData.tagColor}" class="profileheader">${membershipImage} [<a style="color:#${objectData.tagColor}" href="https://www.nitrotype.com/team/${objectData.tag}">${objectData.tag}]<a href="https://www.nitrotype.com/racer/${objectData.username}">${objectData.displayName}</a></h1>
         <h7 class="title">"${objectData.title}"</h7>
         <h3 class="lvl">LVL</h3>
+    <div>
         <h3 class="lvl2">${infinateValue}${levelValue}</h3>
         <h7 class="date">Member Since ${formattedDate}</h7>
+    </div>    
         <h2 class="aspeed">${objectData.avgSpeed}</h2>
         <p class="aspeed">Avg WPM</p>
         <h3 class="tspeed">${objectData.highestSpeed}</h3>
@@ -38,19 +40,13 @@ fetch(`https://scraper.nt-verse.com/api/racer/${racer}`).then((data)=>{
         <p class="nitros">Nitros Used ${nitros}</p>
     </div>
     </div>
-    <style>
-    .container { 
-        background: #20222b!important;
-        animation: borderchange 10s infinite alternate;
-      }
-      @keyframes borderchange
-      {
-        0% { border: 7px solid #${objectData.tagColor};}
-        50% { border: 7px solid #${objectData.tagColor +10};}
-        100% { border: 7px solid #${objectData.tagColor};}
-      }
-    </style>
         <img class="largeimg" src="https://www.nitrotype.com/cars/painted/${carAssetkey}${largeValue}${carHueAngle}.png" alt="©">
+        <style> .container { background: #20222b!important; animation: borderchange 10s infinite alternate;}
+        @keyframes borderchange
+          {0% { border: 7px solid #${objectData.tagColor};}
+          25% { border: 7px solid #${objectData.tagColor};}
+          50% { border: 7px solid #${objectData.tagColor +10};}
+          100% { border: 7px solid #${objectData.tagColor};} } </style>
         `;
     document.getElementById("nathaniel818_stats").innerHTML=tableData;
 })  .catch((err)=>{
