@@ -5,6 +5,12 @@ body {
 	background-color: #2e3141;
   color: white
 }
+.container {
+  background: #20222b!important;
+  background: linear-gradient(to bottom right, #F9D034 10%, #907304 20%, #e0bb2f 40%, #907304 70%, #e0bb2f 80%, #c19a06 90%);
+  border: 7px solid rgba(249, 208, 52, 0.8);
+}
+
 .membershipimg{
   width: 50px
 

@@ -21,6 +21,7 @@ fetch(`https://scraper.nt-verse.com/api/racer/nathaniel818`).then((data)=>{
     let levelValue = objectData.level >= maxseasonlevel ? objectData.level-25 : objectData.level;
     let crttimestamp = objectData.createdStamp; let date = new Date(crttimestamp * 1000); let month = date.getMonth() + 1; let day = date.getDate(); let year = date.getFullYear(); let formattedDate = `${month.toString().padStart(2, "")}/${day.toString().padStart(2, "")}/${year}`
     let tableData = `
+    <div>
         <h1>${membershipImage} [<a href="https://www.nitrotype.com/team/${objectData.tag}">${objectData.tag}]<a href="https://www.nitrotype.com/racer/${objectData.username}">${objectData.displayName}</a></h1>
         <h7 class="gold">"${objectData.title}"</h7>
         <h3>LVL ${infinateValue}${levelValue}</h3>
@@ -32,6 +33,7 @@ fetch(`https://scraper.nt-verse.com/api/racer/nathaniel818`).then((data)=>{
         <h5 class="races">${races} Total Races</h5>
         <p>Profile Views ${views}</p>
         <p>Longest Session ${session}</p>
+    </div>
         <img class="largeimg" src="https://www.nitrotype.com/cars/painted/${carAssetkey}${largeValue}${carHueAngle}.png" alt="©">
         `;
     document.getElementById("nathaniel818_stats").innerHTML=tableData;
