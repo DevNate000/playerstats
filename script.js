@@ -27,7 +27,7 @@ fetch(`https://scraper.nt-verse.com/api/racer/${racer}`).then((data)=>{
         <h3 class="lvl">LVL</h3>
     <div>
         <h3 class="lvl2">${infinateValue}${levelValue}</h3>
-        <h7 class="date">Member Since ${formattedDate}</h7>
+        <h3 class="date">Member Since ${formattedDate}</h3>
     </div>    
         <h2 class="aspeed">${objectData.avgSpeed}</h2>
         <p class="aspeed">Avg WPM</p>

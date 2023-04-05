@@ -56,19 +56,24 @@ body {
   font-weight: bold;
   position: relative;
   color: gold;
-  top: -66px;
-  left: 1188px;
+  top: -49px;
+  text-align: right;
+  left: -50px;
 }
 .lvl2 {
   font-weight: bold;
   position: relative;
-  top: -108px;
-  left: 1246px;
+  top: -90px;
+  text-align: right;
+  left: -7px;
 }
 .date {
-  position: relative;
-  top: -111px;
-  left: 1104px;
+    position: relative;
+    text-align: right!important;
+    top: -90px;
+    left: -10px;
+    font-size: 16px;
+    font-style: italic;
 }
 
 .aspeed {
