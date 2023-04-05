@@ -7,10 +7,9 @@
 // ----------------------------------------------------------------------------------------- //
 // ----------------------------------------------------------------------------------------- //
 // ----------------------------------------------------------------------------------------- //
-let racer = "toonidy";   
+let racer = "nathaniel818";   
 fetch(`https://scraper.nt-verse.com/api/racer/${racer}`).then((data)=>{
         return data.json();
-        
 }).then((objectData)=>{
     let membershipImage = objectData.membership === "gold" ? '<img class="membershipimg" src="image/gold.png">' : '<img class="membershipimg" src="image/basic.png">';
     let carAssetkey = objectData.carID === 333 ? "ytdriver" : objectData.carID;
@@ -39,6 +38,18 @@ fetch(`https://scraper.nt-verse.com/api/racer/${racer}`).then((data)=>{
         <p class="nitros">Nitros Used ${nitros}</p>
     </div>
     </div>
+    <style>
+    .container { 
+        background: #20222b!important;
+        animation: borderchange 10s infinite alternate;
+      }
+      @keyframes borderchange
+      {
+        0% { border: 7px solid #${objectData.tagColor};}
+        50% { border: 7px solid #${objectData.tagColor +10};}
+        100% { border: 7px solid #${objectData.tagColor};}
+      }
+    </style>
         <img class="largeimg" src="https://www.nitrotype.com/cars/painted/${carAssetkey}${largeValue}${carHueAngle}.png" alt="©">
         `;
     document.getElementById("nathaniel818_stats").innerHTML=tableData;

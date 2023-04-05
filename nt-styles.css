@@ -3,11 +3,25 @@ body {
 	background-color: #2e3141;
   color: white
 }
-.container {
+
+
+
+/*
+.container { 
   background: #20222b!important;
-  background: linear-gradient(to bottom right, #F9D034 10%, #907304 20%, #e0bb2f 40%, #907304 70%, #e0bb2f 80%, #c19a06 90%);
-  border: 7px solid rgba(249, 208, 52, 0.8);
+  animation: borderchange 20s infinite alternate;
 }
+@keyframes borderchange
+{
+  0% { border: 7px solid pink;}
+  50% { border: 7px solid yellow;}
+  100% { border: 10px solid red;}
+}
+*/
+
+
+
+
 
 .membershipimg{
   width: 50px
