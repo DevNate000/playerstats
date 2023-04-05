@@ -1,5 +1,3 @@
-
-
 /* Main */
 body {
 	background-color: #2e3141;
@@ -16,9 +14,18 @@ body {
 
 }
 
+.nitroheader {
+  width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
 
+.databox{
+  max-height: 555px;
+}
 /* Positions */
 .profileheader{
   position: relative;
@@ -33,46 +40,56 @@ body {
 .lvl {
   font-weight: bold;
   position: relative;
+  color: gold;
   top: -66px;
   left: 1188px;
 }
+.lvl2 {
+  font-weight: bold;
+  position: relative;
+  top: -108px;
+  left: 1246px;
+}
 .date {
   position: relative;
-  top: -66px;
+  top: -111px;
   left: 1104px;
 }
 
 .aspeed {
   font-weight: bold;
   position: relative;
-  top: -12px;
+  top: -32px;
   left: 61px;
 }
 .tspeed {
   font-weight: bold;
   position: relative;
   color: gold;
-  top: -12px;
+  top: -32px;
   left: 61px;
 }
 .races {
   font-weight: bold;
   position: relative;
-  top: -7px;
+  top: -25px;
   left: 61px;
 }
 .views {
   position: relative;
-  color: lime;
-  top: 94px;
+  top: 64px;
   left: 61px;
 }
 .session {
   position: relative;
-  top: 94px;
+  top: 64px;
   left: 61px;
 }
-
+.nitros {
+  position: relative;
+  top: 64px;
+  left: 61px;
+}
 
 /* Table */
 .lv {
@@ -114,7 +131,7 @@ body {
   font-weight: bold;
   color: teal;
   position: relative;
-  top: -350px;
+  top: -430px;
 }
 a {
 color: white;

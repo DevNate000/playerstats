@@ -15,7 +15,7 @@ fetch(`https://scraper.nt-verse.com/api/racer/nathaniel818`).then((data)=>{
     let carAssetkey = objectData.carID === 333 ? "ytdriver" : objectData.carID;
     let carHueAngle = objectData.carHueAngle === 0 ? 10 : objectData.carHueAngle;
     let largeValue = objectData.carID >= 227 ? "_large_" : "_large_1_";
-    let racenum = objectData.racesPlayed; var races = racenum.toLocaleString('en-US');    let viewsnum = objectData.profileViews; var views = viewsnum.toLocaleString('en-US'); let sessionnum = objectData.longestSession; var session = sessionnum.toLocaleString('en-US');
+    let racenum = objectData.racesPlayed; var races = racenum.toLocaleString('en-US');    let viewsnum = objectData.profileViews; var views = viewsnum.toLocaleString('en-US'); let sessionnum = objectData.longestSession; var session = sessionnum.toLocaleString('en-US'); let nitrosnum = objectData.nitrosUsed; var nitros = nitrosnum.toLocaleString('en-US');
     let maxseasonlevel = 25;   
     let infinateValue = objectData.level >= maxseasonlevel ? "∞" : "‎ ";
     let levelValue = objectData.level >= maxseasonlevel ? objectData.level-25 : objectData.level;
@@ -24,15 +24,19 @@ fetch(`https://scraper.nt-verse.com/api/racer/nathaniel818`).then((data)=>{
     <div>
         <h1 class="profileheader">${membershipImage} [<a href="https://www.nitrotype.com/team/${objectData.tag}">${objectData.tag}]<a href="https://www.nitrotype.com/racer/${objectData.username}">${objectData.displayName}</a></h1>
         <h7 class="title">"${objectData.title}"</h7>
-        <h3 class="lvl">LVL ${infinateValue}${levelValue}</h3>
+        <h3 class="lvl">LVL</h3>
+        <h3 class="lvl2">${infinateValue}${levelValue}</h3>
         <h7 class="date">Member Since ${formattedDate}</h7>
         <h2 class="aspeed">${objectData.avgSpeed}</h2>
         <p class="aspeed">Avg WPM</p>
         <h3 class="tspeed">${objectData.highestSpeed}</h3>
         <p class="tspeed">Top WPM</p>
         <h5 class="races">${races} Total Races</h5>
+    <div>
         <p class="views">Profile Views ${views}</p>
         <p class="session">Longest Session ${session}</p>
+        <p class="nitros">Nitros Used ${nitros}</p>
+    </div>
     </div>
         <img class="largeimg" src="https://www.nitrotype.com/cars/painted/${carAssetkey}${largeValue}${carHueAngle}.png" alt="©">
         `;
