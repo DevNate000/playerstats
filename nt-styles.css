@@ -16,6 +16,64 @@ body {
 
 }
 
+
+
+
+/* Positions */
+.profileheader{
+  position: relative;
+}
+.title {
+  font-style: italic;
+  color: gold;
+  position: relative;
+  top: -12px;
+  left: 61px;
+}
+.lvl {
+  font-weight: bold;
+  position: relative;
+  top: -66px;
+  left: 1188px;
+}
+.date {
+  position: relative;
+  top: -66px;
+  left: 1104px;
+}
+
+.aspeed {
+  font-weight: bold;
+  position: relative;
+  top: -12px;
+  left: 61px;
+}
+.tspeed {
+  font-weight: bold;
+  position: relative;
+  color: gold;
+  top: -12px;
+  left: 61px;
+}
+.races {
+  font-weight: bold;
+  position: relative;
+  top: -7px;
+  left: 61px;
+}
+.views {
+  position: relative;
+  color: lime;
+  top: 94px;
+  left: 61px;
+}
+.session {
+  position: relative;
+  top: 94px;
+  left: 61px;
+}
+
+
 /* Table */
 .lv {
     float: right;
@@ -23,10 +81,9 @@ body {
 .gold {
   font-weight: bold;
   color: gold;
-}
-.views {
-  font-weight: bold;
-  color: lime;
+  position: relative;
+  top: 200px;
+  left: 20px;
 }
 .container {
   max-width: 1350px;
@@ -54,6 +111,10 @@ body {
   margin-right: auto;
   transform: rotate(165deg);
   font-size: 100px;
+  font-weight: bold;
+  color: teal;
+  position: relative;
+  top: -350px;
 }
 a {
 color: white;
