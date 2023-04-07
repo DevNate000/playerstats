@@ -35,6 +35,14 @@ a {
   font-weight: bold;
   color: yellow;
 }
+.racesleft {
+  font-weight: bold;
+  color: blue;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 40px;
+}
 .views {
   font-weight: bold;
   color: lime;

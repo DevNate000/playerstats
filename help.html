@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang=""en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <title>toonidy stats</title>
+        <link rel="icon" href="image/nkey.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        let racer = "toonidy";   
+        fetch(`https://scraper.nt-verse.com/api/racer/${racer}`).then((data)=>{
+                return data.json();
+    }).then((objectData)=>{
+        let membershipImage = objectData.membership === "gold" ? '<img class="membershipimg" src="image/gold.png">' : '<img class="membershipimg" src="image/basic.png">';
+        let carAssetkey = objectData.carID === 333 ? "ytdriver" : objectData.carID;
+        let carHueAngle = objectData.carHueAngle === 0 ? 10 : objectData.carHueAngle;
+        let largeValue = objectData.carID >= 227 ? "_large_" : "_large_1_";
+        let racenum = objectData.racesPlayed; var races = racenum.toLocaleString('en-US');    let viewsnum = objectData.profileViews; var views = viewsnum.toLocaleString('en-US'); let sessionnum = objectData.longestSession; var session = sessionnum.toLocaleString('en-US');
+        let maxseasonlevel = 25;
+        let infinateValue = objectData.level >= maxseasonlevel ? "∞" : "‎ ";
+        let levelValue = objectData.level >= maxseasonlevel ? objectData.level-25 : objectData.level;
+        let crttimestamp = objectData.createdStamp; let date = new Date(crttimestamp * 1000); let month = date.getMonth() + 1; let day = date.getDate(); let year = date.getFullYear(); let formattedDate = `${month.toString().padStart(2, "")}/${day.toString().padStart(2, "")}/${year}`
+        let tableData = `<tr>
+        <td><img class="tinyimg" src="https://www.nitrotype.com/cars/painted/${carAssetkey}${largeValue}${carHueAngle}.png" alt="©"></td> 
+        <td class="membershipimg">${membershipImage}</td>
+        <td>[<a href="https://www.nitrotype.com/team/${objectData.tag}">${objectData.tag}</a>]</td>
+        <td><a href="https://www.nitrotype.com/racer/${objectData.username}">${objectData.displayName}</a></td>
+            <td class="races">${races}</td>
+            <td>${objectData.avgSpeed}</td>
+            <td>${objectData.highestSpeed}</td>
+            <td>${infinateValue}${levelValue}</td>
+            <td>${session}</td>
+            <td class="views">${views}</td>
+            <td>${objectData.totalCars}</td>
+            <td>${formattedDate}</td>
+            </tr>`;
+        document.getElementById("nathaniel818_table").innerHTML=tableData;
+    })  .catch((err)=>{
+        console.log(err);
+    })
+    </script>
+    
+</head>
+<div class="topnav">
+        <a href="all.html">📊</a>
+        <a href="nt.html">🏎</a>
+        <a href="nt2.html">✈️</a>
+        <a href="index.html">nathaniel818</a>
+        <a href="travis.html">travis</a>
+        <a class="activee" href="toonidy.html">toonidy</a>
+</div>
+<body>
+
+    
+    <form id="formElem">
+        <input type="text" name="name" value="travis">
+        <input type="submit">
+      </form>
+
+
+
+
+
+
+    <h1 class="name-stats">toonidy stats</h1>
+    <div class="container">
+    <table class="table table-bordered">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">Car</th>
+            <th scope="col">MS</th>
+            <th scope="col">Team</th>
+            <th scope="col">Name</th>
+            <th scope="col">Races</th>
+            <th scope="col">Avg Speed</th>
+            <th scope="col">High Speed</th>
+            <th scope="col">Level</th>
+            <th scope="col">Session</th>
+            <th scope="col">Profile Views</th>
+            <th scope="col">Cars</th>
+            <th scope="col">Date</th>
+          </tr>                   
+        </thead>
+        <tbody id="toonidy_table">
+        </tbody>
+      </table>   
+      <img src="image/car_toonidy.png" alt="ytdriver">                  
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
