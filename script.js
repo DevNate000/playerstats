@@ -113,7 +113,7 @@ fetch(`https://scraper.nt-verse.com/api/racer/nathaniel818`).then((data)=>{
     let carAssetkey = objectData.carID === 333 ? "ytdriver" : objectData.carID;
     let carHueAngle = objectData.carHueAngle === 0 ? 10 : objectData.carHueAngle;
     let largeValue = objectData.carID >= 227 ? "_large_" : "_large_1_";
-    let racenum = objectData.racesPlayed; var races = racenum.toLocaleString('en-US');    let viewsnum = objectData.profileViews; var views = viewsnum.toLocaleString('en-US'); let sessionnum = objectData.longestSession; var session = sessionnum.toLocaleString('en-US');let racenum2 = 75000 - objectData.racesPlayed; var races2 = racenum2.toLocaleString('en-US');
+    let racenum = objectData.racesPlayed; var races = racenum.toLocaleString('en-US');    let viewsnum = objectData.profileViews; var views = viewsnum.toLocaleString('en-US'); let sessionnum = objectData.longestSession; var session = sessionnum.toLocaleString('en-US');
     let maxseasonlevel = 25;
     let infinateValue = objectData.level >= maxseasonlevel ? "∞" : "‎ ";
     let levelValue = objectData.level >= maxseasonlevel ? objectData.level-25 : objectData.level;
@@ -131,9 +131,17 @@ fetch(`https://scraper.nt-verse.com/api/racer/nathaniel818`).then((data)=>{
         <td class="views">${views}</td>
         <td>${objectData.totalCars}</td>
         <td>${formattedDate}</td>
-        <h1 class="racesleft">${races2} Races Left!</h1>
         </tr>`;
     document.getElementById("nathaniel818_table").innerHTML=tableData;
+})  .catch((err)=>{
+    console.log(err);
+})
+fetch(`https://scraper.nt-verse.com/api/racer/nathaniel818`).then((data)=>{
+        return data.json();
+}).then((objectData)=>{
+    let racenum2 = 75000 - objectData.racesPlayed; var races2 = racenum2.toLocaleString('en-US');
+    let tableData = `<h1 class="racesleft">${races2} Races Left!</h1>`;
+    document.getElementById("nathaniel818_table2").innerHTML=tableData;
 })  .catch((err)=>{
     console.log(err);
 })
