@@ -29,6 +29,17 @@ a {
 }
 
 
+.style404{
+  text-align: center;
+  font-size: 72px;
+  background: -webkit-linear-gradient(#ff1d1d,red, #1c1c1c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+
+}
+
+
 /* Table */
 
 .races {
@@ -40,7 +51,6 @@ a {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  font-size: 70px;
   text-align: center;
   font-size: 72px;
   background: -webkit-linear-gradient(#ff9238, #cc5c00);
