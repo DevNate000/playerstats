@@ -37,12 +37,16 @@ a {
 }
 .racesleft {
   font-weight: bold;
-  color: orange;
   display: block;
   margin-left: auto;
   margin-right: auto;
   font-size: 70px;
   text-align: center;
+  font-size: 72px;
+  background: -webkit-linear-gradient(#ff9238, #cc5c00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px white; 
 }
 .views {
   font-weight: bold;
