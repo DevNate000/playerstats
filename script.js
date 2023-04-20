@@ -5,8 +5,17 @@
 // SEASON LEVEL //
 
 // ----------------------------------------------------------------------------------------- //
+    var maxseasonlevel = 25;
+    
+    var hey111 = 111;
+    var hey11 = 11;
+    var hey1 = 1;
+
 // ----------------------------------------------------------------------------------------- //
-// ----------------------------------------------------------------------------------------- //
+
+
+
+
 let racer = "nathaniel818";   
 fetch(`https://scraper.nt-verse.com/api/racer/${racer}`).then((data)=>{
         return data.json();
@@ -16,7 +25,6 @@ fetch(`https://scraper.nt-verse.com/api/racer/${racer}`).then((data)=>{
     let carHueAngle = objectData.carHueAngle === 0 ? 10 : objectData.carHueAngle;
     let largeValue = objectData.carID >= 227 ? "_large_" : "_large_1_";
     let racenum = objectData.racesPlayed; var races = racenum.toLocaleString('en-US');    let viewsnum = objectData.profileViews; var views = viewsnum.toLocaleString('en-US'); let sessionnum = objectData.longestSession; var session = sessionnum.toLocaleString('en-US'); let nitrosnum = objectData.nitrosUsed; var nitros = nitrosnum.toLocaleString('en-US');
-    let maxseasonlevel = 25;   
     let infinateValue = objectData.level >= maxseasonlevel ? "∞" : "‎ ";
     let levelValue = objectData.level >= maxseasonlevel ? objectData.level-25 : objectData.level;
     let crttimestamp = objectData.createdStamp; let date = new Date(crttimestamp * 1000); let month = date.getMonth() + 1; let day = date.getDate(); let year = date.getFullYear(); let formattedDate = `${month.toString().padStart(2, "")}/${day.toString().padStart(2, "")}/${year}`
@@ -65,7 +73,6 @@ fetch(`https://scraper.nt-verse.com/api/racer/${racer2}`).then((data)=>{
     let carHueAngle = objectData.carHueAngle === 0 ? 10 : objectData.carHueAngle;
     let largeValue = objectData.carID >= 227 ? "_large_" : "_large_1_";
     let racenum = objectData.racesPlayed; var races = racenum.toLocaleString('en-US');    let viewsnum = objectData.profileViews; var views = viewsnum.toLocaleString('en-US'); let sessionnum = objectData.longestSession; var session = sessionnum.toLocaleString('en-US'); let nitrosnum = objectData.nitrosUsed; var nitros = nitrosnum.toLocaleString('en-US');
-    let maxseasonlevel = 25;   
     let infinateValue = objectData.level >= maxseasonlevel ? "∞" : "‎ ";
     let levelValue = objectData.level >= maxseasonlevel ? objectData.level-25 : objectData.level;
     let crttimestamp = objectData.createdStamp; let date = new Date(crttimestamp * 1000); let month = date.getMonth() + 1; let day = date.getDate(); let year = date.getFullYear(); let formattedDate = `${month.toString().padStart(2, "")}/${day.toString().padStart(2, "")}/${year}`
@@ -105,7 +112,6 @@ fetch(`https://scraper.nt-verse.com/api/racer/${racer2}`).then((data)=>{
 // ----------------------------------------------------------------------------------------- //
 // ----------------------------------------------------------------------------------------- //
 // ----------------------------------------------------------------------------------------- //
-
 fetch(`https://scraper.nt-verse.com/api/racer/nathaniel818`).then((data)=>{
         return data.json();
 }).then((objectData)=>{
@@ -114,7 +120,6 @@ fetch(`https://scraper.nt-verse.com/api/racer/nathaniel818`).then((data)=>{
     let carHueAngle = objectData.carHueAngle === 0 ? 10 : objectData.carHueAngle;
     let largeValue = objectData.carID >= 227 ? "_large_" : "_large_1_";
     let racenum = objectData.racesPlayed; var races = racenum.toLocaleString('en-US');    let viewsnum = objectData.profileViews; var views = viewsnum.toLocaleString('en-US'); let sessionnum = objectData.longestSession; var session = sessionnum.toLocaleString('en-US');
-    let maxseasonlevel = 25;
     let infinateValue = objectData.level >= maxseasonlevel ? "∞" : "‎ ";
     let levelValue = objectData.level >= maxseasonlevel ? objectData.level-25 : objectData.level;
     let crttimestamp = objectData.createdStamp; let date = new Date(crttimestamp * 1000); let month = date.getMonth() + 1; let day = date.getDate(); let year = date.getFullYear(); let formattedDate = `${month.toString().padStart(2, "")}/${day.toString().padStart(2, "")}/${year}`
@@ -158,7 +163,6 @@ fetch(`https://scraper.nt-verse.com/api/racer/toonidy`).then((data)=>{
     let carHueAngle = objectData.carHueAngle === 0 ? 10 : objectData.carHueAngle;
     let largeValue = objectData.carID >= 227 ? "_large_" : "_large_1_";
     let racenum = objectData.racesPlayed; var races = racenum.toLocaleString('en-US');    let viewsnum = objectData.profileViews; var views = viewsnum.toLocaleString('en-US'); let sessionnum = objectData.longestSession; var session = sessionnum.toLocaleString('en-US');
-    let maxseasonlevel = 25;
     let infinateValue = objectData.level >= maxseasonlevel ? "∞" : "‎ ";
     let levelValue = objectData.level >= maxseasonlevel ? objectData.level-25 : objectData.level;
     let crttimestamp = objectData.createdStamp; let date = new Date(crttimestamp * 1000); let month = date.getMonth() + 1; let day = date.getDate(); let year = date.getFullYear(); let formattedDate = `${month.toString().padStart(2, "")}/${day.toString().padStart(2, "")}/${year}`
@@ -193,7 +197,6 @@ fetch(`https://scraper.nt-verse.com/api/racer/travis`).then((data)=>{
     let carHueAngle = objectData.carHueAngle === 0 ? 10 : objectData.carHueAngle;
     let largeValue = objectData.carID >= 227 ? "_large_" : "_large_1_";
     let racenum = objectData.racesPlayed; var races = racenum.toLocaleString('en-US');    let viewsnum = objectData.profileViews; var views = viewsnum.toLocaleString('en-US'); let sessionnum = objectData.longestSession; var session = sessionnum.toLocaleString('en-US');
-    let maxseasonlevel = 25;
     let infinateValue = objectData.level >= maxseasonlevel ? "∞" : "‎ ";
     let levelValue = objectData.level >= maxseasonlevel ? objectData.level-25 : objectData.level;
     let crttimestamp = objectData.createdStamp; let date = new Date(crttimestamp * 1000); let month = date.getMonth() + 1; let day = date.getDate(); let year = date.getFullYear(); let formattedDate = `${month.toString().padStart(2, "")}/${day.toString().padStart(2, "")}/${year}`
@@ -225,7 +228,6 @@ fetch(`https://scraper.nt-verse.com/api/racer/grue8`).then((data)=>{
     let carHueAngle = objectData.carHueAngle === 0 ? 10 : objectData.carHueAngle;
     let largeValue = objectData.carID >= 227 ? "_large_" : "_large_1_";
     let racenum = objectData.racesPlayed; var races = racenum.toLocaleString('en-US');    let viewsnum = objectData.profileViews; var views = viewsnum.toLocaleString('en-US'); let sessionnum = objectData.longestSession; var session = sessionnum.toLocaleString('en-US');
-    let maxseasonlevel = 25;
     let infinateValue = objectData.level >= maxseasonlevel ? "∞" : "‎ ";
     let levelValue = objectData.level >= maxseasonlevel ? objectData.level-25 : objectData.level;
     let crttimestamp = objectData.createdStamp; let date = new Date(crttimestamp * 1000); let month = date.getMonth() + 1; let day = date.getDate(); let year = date.getFullYear(); let formattedDate = `${month.toString().padStart(2, "")}/${day.toString().padStart(2, "")}/${year}`
