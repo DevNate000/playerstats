@@ -9,20 +9,28 @@
         <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>body{background-image: linear-gradient(90deg, #9665f7, #8e4ff3, #8411ff); text-align: center;}
-           h1{color:rgba(255, 255, 255, 0.887); font-size: 100px; font-family:Impact}
-           h2{color:rgba(255, 255, 255, 0.728);}
+           h1{color:rgba(255, 255, 255, 0.887); font-size: 50px; font-family:Impact}
+           h2{color:rgba(255, 255, 255, 0.887); font-size: 100px; font-family:Impact}
+           h3{color:rgba(255, 255, 255, 0.728);}
     </style>
 </head>
 <div class="topnav">
         <a href="index.html">NOW</a>
 </div>
 <body>
-    <script 
-    
-    
+        <h1 id="currenttime"></h1>
+    <script>
+    let time = document.getElementById("currenttime");
+    let d = new Date();
+    time.innerHTML = d.toLocaleTimeString();
+
+
+
+
+
     
         type="text/javascript">
-        document.write("<h1>");
+        document.write("<h2>");
         var day = new Date();
         var hr = day.getHours();
 /* Customs */
@@ -87,16 +95,16 @@
          document.write(" Go to bed. It's late!");
         }
 
-        document.write("</h1>");
+        document.write("</h2>");
 
         
 /* Other Notes */
-        type="text/javascript"> document.write("<h2>");  var day = new Date(); var hr = day.getHours();
+        type="text/javascript"> document.write("<h3>");  var day = new Date(); var hr = day.getHours();
         if ((hr == 12) || (hr == 15) || (hr == 9)) {
         document.write("•Remember to Smell Oils");}
         if ((hr == 1) || (hr == 2) || (hr == 3)) {
         document.write("E");}
-        document.write("</h2>");
+        document.write("</h3>");
         </script>
 
 </div>
