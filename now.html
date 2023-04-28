@@ -33,6 +33,7 @@
         document.write("<h2>");
         var day = new Date();
         var hr = day.getHours();
+        var min = day.getMinutes();
 /* Customs */
         var workOne = "Khan"
         var workTwo = "HTML/CSS Course"
@@ -55,8 +56,11 @@
 
 /* Morning */
 
-        if (hr == 9) {
+        if (hr == 9 && min <= 30) {
          document.write(" 9AM: Time to start your work");
+        }
+        if (hr == 9 && min >= 30) {
+         document.write(" 9:30am hehehehe");
         }
         if (hr == 10) {
          document.write(" 10AM: "+workOne);

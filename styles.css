@@ -5,6 +5,16 @@ body {
 }
 
 
+iframe{
+  border-radius: none;
+  border-color: none;
+  border: none;
+  align-items: center;
+  text-align: center;
+  background: none;
+}
+
+
 /*Car Images*/
 
 img {
