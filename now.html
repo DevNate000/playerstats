@@ -12,6 +12,7 @@
            h1{color:rgba(255, 255, 255, 0.887); font-size: 50px; font-family:Impact}
            h2{color:rgba(255, 255, 255, 0.887); font-size: 100px; font-family:Impact}
            h3{color:rgba(255, 255, 255, 0.728);}
+           .nowimg{    width: 130px;}
     </style>
 </head>
 <div class="topnav">
@@ -23,8 +24,6 @@
     let time = document.getElementById("currenttime");
     let d = new Date();
     time.innerHTML = d.toLocaleTimeString();
-
-
 
 
 
@@ -60,7 +59,8 @@
          document.write(" 9AM: Time to start your work");
         }
         if (hr == 9 && min >= 30) {
-         document.write(" 9:30am hehehehe");
+         document.write("<img class=nowimg src='image/nkey.png'>");
+         document.write(" 9:30am");
         }
         if (hr == 10) {
          document.write(" 10AM: "+workOne);
