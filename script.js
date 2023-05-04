@@ -145,7 +145,8 @@ fetch(`https://scraper.nt-verse.com/api/racer/nathaniel818`).then((data)=>{
         return data.json();
 }).then((objectData)=>{
     let racenum2 = 75000 - objectData.racesPlayed; var races2 = racenum2.toLocaleString('en-US');
-    let tableData = `<h1 class="racesleft">${races2} Races Left!</h1>`;
+    let racenum3 = 100000 - objectData.racesPlayed; var races3 = racenum3.toLocaleString('en-US');
+    let tableData = `<h1 class="racesleft">${races2} Races Left!</h1> <h1 class="racesleft">${races3} Races Left!</h1>`;
     document.getElementById("nathaniel818_table2").innerHTML=tableData;
 })  .catch((err)=>{
     console.log(err);
