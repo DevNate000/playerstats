@@ -5,11 +5,11 @@
 // SEASON LEVEL //
 
 // ----------------------------------------------------------------------------------------- //
-    var maxseasonlevel = 25;
+    const maxseasonlevel = 25;
     
-    var hey111 = 111;
-    var hey11 = 11;
-    var hey1 = 1;
+    const hey111 = 111;
+    const hey11 = 11;
+    const hey1 = 1;
 
 // ----------------------------------------------------------------------------------------- //
 
@@ -144,9 +144,8 @@ fetch(`https://scraper.nt-verse.com/api/racer/nathaniel818`).then((data)=>{
 fetch(`https://scraper.nt-verse.com/api/racer/nathaniel818`).then((data)=>{
         return data.json();
 }).then((objectData)=>{
-    let racenum2 = 75000 - objectData.racesPlayed; var races2 = racenum2.toLocaleString('en-US');
-    let racenum3 = 100000 - objectData.racesPlayed; var races3 = racenum3.toLocaleString('en-US');
-    let tableData = `<h1 class="racesleft">${races2} Races Left!</h1> <h1 class="racesleft">${races3} Races Left!</h1>`;
+    let racenum2 = 100000 - objectData.racesPlayed; var races2 = racenum2.toLocaleString('en-US');
+    let tableData = `<h1 class="racesleft">${races2} Races Left!</h1>`;
     document.getElementById("nathaniel818_table2").innerHTML=tableData;
 })  .catch((err)=>{
     console.log(err);
@@ -221,7 +220,7 @@ fetch(`https://scraper.nt-verse.com/api/racer/travis`).then((data)=>{
 })
 // ----------------------------------------------------------------------------------------- //
 
-fetch(`https://scraper.nt-verse.com/api/racer/grue8`).then((data)=>{
+fetch(`https://scraper.nt-verse.com/api/racer/moilyn`).then((data)=>{
         return data.json();
 }).then((objectData)=>{
     let membershipImage = objectData.membership === "gold" ? '<img class="membershipimg" src="image/gold.png">' : '<img class="membershipimg" src="image/basic.png">';
